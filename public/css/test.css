@@ -4,3 +4,12 @@ body {
   color: green;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif, "微軟正黑體";
 }
+
+.bt-primary {
+  background-color: #42858C;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  letter-spacing: 4px;
+  border-radius: 4px;
+}
