@@ -17,7 +17,6 @@ a {
 
 body {
     margin: 0;
-    // background-color: antiquewhite;
 }
 
 header {
@@ -30,7 +29,6 @@ header>.container>h1>a {
 }
 
 .container {
-    // background-color: rgb(189, 189, 189);
     width: 90%;
     margin: auto;
     max-width: 1140px;
@@ -49,6 +47,6 @@ header>.container>nav>ul>li>a {
     background-color: $primary-color;
     color: white;
     line-height: 60px;
-    padding: 10px;
-
+    padding: 8px;
+    border-style: double;
 }

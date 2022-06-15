@@ -44,5 +44,6 @@ header > .container > nav > ul > li > a {
   background-color: #1d717a;
   color: white;
   line-height: 60px;
-  padding: 10px;
+  padding: 8px;
+  border-style: double;
 }
