@@ -52,11 +52,38 @@ header > .container > nav > ul > li > a {
   width: 100%;
 }
 
+.img-rounded {
+  border-radius: 8px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
 }
 
+.col-3 {
+  width: calc(100%/4 - 40px);
+  margin: 10px 20px 10px 20px;
+}
+
 .col-4 {
-  width: 33.33%;
+  width: calc(100%/3 - 40px);
+  margin: 10px 20px 10px 20px;
+}
+
+.col-6 {
+  width: calc(100%/2 - 40px);
+  margin: 10px 20px 10px 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }

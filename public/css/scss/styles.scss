@@ -56,15 +56,50 @@ header>.container>nav>ul>li>a {
 // 內容
 // ====================================
 
+
+// 圖片相關
 .img-fluid {
     width: 100%;
 }
 
+.img-rounded{
+    border-radius: 8px;
+}
+// 圖片相關
+
+// 區塊相關
 .row {
     display: flex;
     flex-wrap: wrap;
 }
+// 區塊相關
+
+
+.col-3 {
+    width: calc(100%/4 - 40px);
+    margin: 10px 20px 10px 20px;
+    // 上右下左
+}
 
 .col-4 {
-    width: 33.33%;
+    width: calc(100%/3 - 40px);
+    margin: 10px 20px 10px 20px;
+    // 上右下左
 }
+
+.col-6 {
+    width: calc(100%/2 - 40px);
+    margin: 10px 20px 10px 20px;
+    // 上右下左
+}
+
+// 文字相關
+.text-center{
+    text-align: center;
+}
+
+.text-right{text-align: right}
+
+.text-left{text-align: left}
+
+// .text-justify{}
