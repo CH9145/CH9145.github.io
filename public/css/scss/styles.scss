@@ -1,4 +1,54 @@
-body{
+$primary-color: rgb(29, 113, 122);
+
+* {
     margin: 0;
-    background-color: antiquewhite;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    // background-color: antiquewhite;
+}
+
+header {
+    padding-top: 20px;
+}
+
+header>.container>h1>a {
+    color: $primary-color;
+    font-size: 40px;
+}
+
+.container {
+    // background-color: rgb(189, 189, 189);
+    width: 90%;
+    margin: auto;
+    max-width: 1140px;
+}
+
+header>.container>nav>ul {
+    display: flex;
+    // justify-content: space-between;
+}
+
+header>.container>nav>ul>li {
+    margin-right: 30px;
+}
+
+header>.container>nav>ul>li>a {
+    background-color: $primary-color;
+    color: white;
+    line-height: 60px;
+    padding: 10px;
+
 }
