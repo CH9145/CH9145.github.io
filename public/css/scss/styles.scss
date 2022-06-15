@@ -26,7 +26,7 @@ header {
 
 header>.container>h1>a {
     color: $primary-color;
-    font-size: 40px;
+    font-size: 48px;
 }
 
 .container {
@@ -75,20 +75,25 @@ header>.container>nav>ul>li>a {
 // 區塊相關
 
 
+.col-footer {
+    text-align: center;
+    width: calc(100% / 4 - 40px);
+    margin: 10px 20px 10px 20px;
+}
 .col-3 {
-    width: calc(100%/4 - 40px);
+    width: calc(100% / 4 - 40px);
     margin: 10px 20px 10px 20px;
     // 上右下左
 }
 
 .col-4 {
-    width: calc(100%/3 - 40px);
+    width: calc(100% / 3 - 40px);
     margin: 10px 20px 10px 20px;
     // 上右下左
 }
 
 .col-6 {
-    width: calc(100%/2 - 40px);
+    width: calc(100% / 2 - 40px);
     margin: 10px 20px 10px 20px;
     // 上右下左
 }
@@ -102,4 +107,46 @@ header>.container>nav>ul>li>a {
 
 .text-left{text-align: left}
 
-// .text-justify{}
+.text-justify{text-align: justify;}
+
+h2{
+    margin: 10px;
+    font-size: 30px;
+}
+
+// 內容
+
+.title a{
+    color: rgb(10, 89, 111);
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.description{
+    color: rgb(69, 69, 69);
+    padding-bottom: 20px;
+}
+
+
+// FOOTER
+footer{
+    color: white;
+    background-color: $primary-color;
+}
+
+footer>div>div>dl>dt{
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer>div>div>dl>dd>a{
+    color: rgb(209, 207, 207);
+    font-size: 16px;
+    line-height: 30px;
+}
+
+footer>div>p{
+    color: rgb(165, 164, 164);
+    font-size: 14px;
+    padding: 20px;
+}

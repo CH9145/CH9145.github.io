@@ -24,7 +24,7 @@ header {
 
 header > .container > h1 > a {
   color: #1d717a;
-  font-size: 40px;
+  font-size: 48px;
 }
 
 .container {
@@ -61,18 +61,24 @@ header > .container > nav > ul > li > a {
   flex-wrap: wrap;
 }
 
+.col-footer {
+  text-align: center;
+  width: calc(100% / 4 - 40px);
+  margin: 10px 20px 10px 20px;
+}
+
 .col-3 {
-  width: calc(100%/4 - 40px);
+  width: calc(100% / 4 - 40px);
   margin: 10px 20px 10px 20px;
 }
 
 .col-4 {
-  width: calc(100%/3 - 40px);
+  width: calc(100% / 3 - 40px);
   margin: 10px 20px 10px 20px;
 }
 
 .col-6 {
-  width: calc(100%/2 - 40px);
+  width: calc(100% / 2 - 40px);
   margin: 10px 20px 10px 20px;
 }
 
@@ -86,4 +92,46 @@ header > .container > nav > ul > li > a {
 
 .text-left {
   text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+h2 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.title a {
+  color: #0a596f;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.description {
+  color: #454545;
+  padding-bottom: 20px;
+}
+
+footer {
+  color: white;
+  background-color: #1d717a;
+}
+
+footer > div > div > dl > dt {
+  font-size: 20px;
+  padding: 10px;
+}
+
+footer > div > div > dl > dd > a {
+  color: #d1cfcf;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+footer > div > p {
+  color: #a5a4a4;
+  font-size: 14px;
+  padding: 20px;
 }
