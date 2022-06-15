@@ -37,6 +37,7 @@ header>.container>h1>a {
 
 header>.container>nav>ul {
     display: flex;
+    justify-content: end;
     // justify-content: space-between;
 }
 
@@ -45,8 +46,7 @@ header>.container>nav>ul>li {
 }
 
 header>.container>nav>ul>li>a {
-    background-color: $primary-color;
-    color: white;
+    color: $primary-color;
     line-height: 60px;
     padding: 8px;
     // border-style: double;
@@ -56,4 +56,15 @@ header>.container>nav>ul>li>a {
 // 內容
 // ====================================
 
+.img-fluid {
+    width: 100%;
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: 33.33%;
+}

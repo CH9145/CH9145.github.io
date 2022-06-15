@@ -35,6 +35,7 @@ header > .container > h1 > a {
 
 header > .container > nav > ul {
   display: flex;
+  justify-content: end;
 }
 
 header > .container > nav > ul > li {
@@ -42,8 +43,20 @@ header > .container > nav > ul > li {
 }
 
 header > .container > nav > ul > li > a {
-  background-color: #1d717a;
-  color: white;
+  color: #1d717a;
   line-height: 60px;
   padding: 8px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+  width: 33.33%;
 }
