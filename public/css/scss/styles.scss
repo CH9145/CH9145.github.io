@@ -150,3 +150,41 @@ footer>div>p{
     font-size: 14px;
     padding: 20px;
 }
+
+.link{
+    display: block;
+color: gray;
+
+}
+
+.link>p>a{
+color: gray;
+font-size: 16px;
+margin: 10px;
+}
+
+.nav-side>ul>li>a{
+    display: block;
+background-color: $primary-color;
+color: white;
+width: 120px;
+line-height: 40px;
+margin: 10px;
+text-align: center;
+border-radius: 6px;
+font-size: 20px;
+
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-side{
+    margin-right: 50px;
+}
+
+.web-design{
+    margin: 0px 20px 50px 20px;
+}
