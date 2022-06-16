@@ -136,15 +136,25 @@ footer > div > p {
   padding: 20px;
 }
 
-.link {
+.navlink {
+  padding-top: 20px;
   display: block;
   color: gray;
 }
 
-.link > p > a {
+.navlink > p {
+  letter-spacing: 2px;
+}
+
+.navlink > p > a {
   color: gray;
   font-size: 16px;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
+  letter-spacing: 2px;
+}
+
+.navlink > p > a:hover {
+  color: #1d717a;
 }
 
 .nav-side > ul > li > a {
@@ -153,10 +163,14 @@ footer > div > p {
   color: white;
   width: 120px;
   line-height: 40px;
-  margin: 10px;
+  margin: 10px 10px 10px 0px;
   text-align: center;
   border-radius: 6px;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.nav-side > ul > li > a:hover {
+  background-color: #4b818a;
 }
 
 main {
@@ -169,5 +183,9 @@ main {
 }
 
 .web-design {
-  margin: 0px 20px 50px 20px;
+  margin: 0px 0px 50px 20px;
+}
+
+.web-design > h2 {
+  margin-left: 20px;
 }

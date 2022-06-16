@@ -62,9 +62,10 @@ header>.container>nav>ul>li>a {
     width: 100%;
 }
 
-.img-rounded{
+.img-rounded {
     border-radius: 8px;
 }
+
 // 圖片相關
 
 // 區塊相關
@@ -72,6 +73,7 @@ header>.container>nav>ul>li>a {
     display: flex;
     flex-wrap: wrap;
 }
+
 // 區塊相關
 
 
@@ -80,6 +82,7 @@ header>.container>nav>ul>li>a {
     width: calc(100% / 4 - 40px);
     margin: 10px 20px 10px 20px;
 }
+
 .col-3 {
     width: calc(100% / 4 - 40px);
     margin: 10px 20px 10px 20px;
@@ -99,92 +102,116 @@ header>.container>nav>ul>li>a {
 }
 
 // 文字相關
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.text-right{text-align: right}
+.text-right {
+    text-align: right
+}
 
-.text-left{text-align: left}
+.text-left {
+    text-align: left
+}
 
-.text-justify{text-align: justify;}
+.text-justify {
+    text-align: justify;
+}
 
-h2{
+h2 {
     margin: 10px;
     font-size: 30px;
 }
 
 // 內容
 
-.title a{
+.title a {
     color: rgb(10, 89, 111);
     font-size: 1.5em;
     font-weight: 800;
 }
 
-.description{
+.description {
     color: rgb(69, 69, 69);
     padding-bottom: 20px;
 }
 
 
 // FOOTER
-footer{
+footer {
     color: white;
     background-color: $primary-color;
 }
 
-footer>div>div>dl>dt{
+footer>div>div>dl>dt {
     font-size: 20px;
     padding: 10px;
 }
 
-footer>div>div>dl>dd>a{
+footer>div>div>dl>dd>a {
     color: rgb(209, 207, 207);
     font-size: 16px;
     line-height: 30px;
 }
 
-footer>div>p{
+footer>div>p {
     color: rgb(165, 164, 164);
     font-size: 14px;
     padding: 20px;
 }
 
-.link{
+// 
+// 網頁作品
+.navlink {
+    padding-top: 20px;
     display: block;
-color: gray;
-
+    color: gray;
 }
 
-.link>p>a{
-color: gray;
-font-size: 16px;
-margin: 10px;
+
+.navlink>p{
+    letter-spacing: 2px;
 }
 
-.nav-side>ul>li>a{
+.navlink>p>a {
+    color: gray;
+    font-size: 16px;
+    margin: 10px 0px 10px 0px;
+    letter-spacing: 2px;
+}
+
+.navlink>p>a:hover {
+    color: $primary-color;
+}
+
+.nav-side>ul>li>a {
     display: block;
-background-color: $primary-color;
-color: white;
-width: 120px;
-line-height: 40px;
-margin: 10px;
-text-align: center;
-border-radius: 6px;
-font-size: 20px;
-
+    background-color: $primary-color;
+    color: white;
+    width: 120px;
+    line-height: 40px;
+    margin: 10px 10px 10px 0px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 18px;
+}
+.nav-side>ul>li>a:hover {
+background-color: rgb(75, 129, 138);
 }
 
-main{
+main {
     display: flex;
     justify-content: space-between;
 }
 
-.nav-side{
+.nav-side {
     margin-right: 50px;
 }
 
-.web-design{
-    margin: 0px 20px 50px 20px;
+.web-design {
+    margin: 0px 0px 50px 20px;
+}
+
+.web-design>h2{
+    margin-left: 20px;
 }
