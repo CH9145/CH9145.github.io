@@ -150,7 +150,7 @@ footer > div > p {
   color: gray;
   font-size: 16px;
   margin: 10px 0px 10px 0px;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 
 .navlink > p > a:hover {
