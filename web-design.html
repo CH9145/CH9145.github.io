@@ -16,7 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="#">關於我</a></li>
-                    <li><a href="#">平面作品</a></li>
+                    <li><a href="#">學習筆記</a></li>
                     <li><a href="web-design.html">網頁作品</a></li>
                     <li><a href="#">聯絡資訊</a></li>
                 </ul>
@@ -24,48 +24,61 @@
         </div>
     </header>
 
-    <div class="container navlinkie">
-        <p><a href="index.html">首頁</a>
-            >
-            <a href="" class="linkienow">網頁作品</a>
-        </p>
-    </div>
-    <main class="container">
-        <div class="nav-side">
-            <ul>
-                <li><a href="">網頁1</a></li>
-                <li><a href="">網頁2</a></li>
-                <li><a href="">網頁3</a></li>
-                <li><a href="">網頁4</a></li>
-            </ul>
+    <div class="container">
+        <div class="row">
+            <p class="breadcrump">
+                <a href="index.html">首頁</a>
+                >
+                <a href="web-design.html" class="breadcrump-now">網頁作品</a>
+                >
+                <a href="">作品內頁</a>
+            </p>
+
+            <aside class="col-3">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="">網頁1</a></li>
+                        <li><a href="">網頁2</a></li>
+                        <li><a href="">網頁3</a></li>
+                        <li><a href="">網頁4</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="col-9">
+                <div class="web-design"> 
+                    <h2 class="text-left">網頁作品一覽</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href=""><img src="https://www.fillmurray.com/400/400" alt="" class="img-fluid"></a>
+                            <p class="title text-center"><a href="">網頁1</a></p>
+                            <p class="description text-center">說明</p>
+                        </div>
+                        <div class="col-6">
+                            <a href=""><img src="https://www.fillmurray.com/400/400" alt="" class="img-fluid"></a>
+                            <p class="title text-center"><a href="">網頁2</a></p>
+                            <p class="description text-center">說明</p>
+                        </div>
+                        <div class="col-6">
+                            <a href=""><img src="https://www.fillmurray.com/400/400" alt="" class="img-fluid"></a>
+                            <p class="title text-center"><a href="">網頁3</a></p>
+                            <p class="description text-center">說明</p>
+                        </div>
+                        <div class="col-6">
+                            <a href=""><img src="https://www.fillmurray.com/400/400" alt="" class="img-fluid"></a>
+                            <p class="title text-center"><a href="">網頁4</a></p>
+                            <p class="description text-center">說明</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
         </div>
 
-        <div class="web-design">
-            <h2 class="text-left">網頁作品一覽</h2>
-            <div class="row">
-                <div class="col-6">
-                    <a href=""><img src="https://www.fillmurray.com/400/400" alt="" class="img-fluid"></a>
-                    <p class="title text-center"><a href="">網頁1</a></p>
-                    <p class="description text-center">說明</p>
-                </div>
-                <div class="col-6">
-                    <a href=""><img src="https://www.fillmurray.com/400/400" alt="" class="img-fluid"></a>
-                    <p class="title text-center"><a href="">網頁2</a></p>
-                    <p class="description text-center">說明</p>
-                </div>
-                <div class="col-6">
-                    <a href=""><img src="https://www.fillmurray.com/400/400" alt="" class="img-fluid"></a>
-                    <p class="title text-center"><a href="">網頁3</a></p>
-                    <p class="description text-center">說明</p>
-                </div>
-                <div class="col-6">
-                    <a href=""><img src="https://www.fillmurray.com/400/400" alt="" class="img-fluid"></a>
-                    <p class="title text-center"><a href="">網頁4</a></p>
-                    <p class="description text-center">說明</p>
-                </div>
-            </div>
-        </div>
-    </main>
+    </div>
+
+
+
+
 
 
     <!-- footer>.container>dl*5>dt{標題$$}+dd*4>a{項目$$}^^p.copyright.text-center{copyright 2022} -->
