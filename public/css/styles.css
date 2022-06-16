@@ -10,7 +10,7 @@ ol {
 
 a {
   text-decoration: none;
-  color: blue;
+  color: #1d717a;
   font-size: 20px;
 }
 
@@ -144,6 +144,12 @@ h2 {
   font-size: 30px;
 }
 
+a.title {
+  color: #1d717a;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
 .title a {
   color: #0a596f;
   font-size: 1.5em;
@@ -215,4 +221,39 @@ main {
 
 .web-design > h2 {
   margin-left: 20px;
+}
+
+.text-primary {
+  color: #1d717a;
+}
+
+.img-wrap {
+  display: block;
+  position: relative;
+}
+
+.img-overlay {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-wrap img {
+  vertical-align: top;
+  transition: all 0.5s;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.icon-new {
+  position: absolute;
+  text-align: center;
+  width: 80px;
+  line-height: 80px;
+  background-color: #ac2e0e;
+  color: white;
+  border-radius: 100%;
+  top: -10px;
+  left: -10px;
 }
