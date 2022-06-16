@@ -162,43 +162,50 @@ footer>div>p {
 
 // 
 // 網頁作品
-.navlink {
-    padding-top: 20px;
+.navlinkie {
+    margin-top: 20px;
     display: block;
     color: gray;
 }
 
 
-.navlink>p{
+.navlinkie>p {
     letter-spacing: 2px;
 }
 
-.navlink>p>a {
+.navlinkie>p>a {
     color: gray;
     font-size: 16px;
     margin: 10px 0px 10px 0px;
     letter-spacing: 0px;
 }
 
-.navlink>p>a:hover {
+.navlinkie>p>a:hover {
     color: $primary-color;
 }
+
+.navlinkie>p>.linkienow {
+    color: $primary-color;
+    }
 
 .nav-side>ul>li>a {
     display: block;
     background-color: $primary-color;
     color: white;
-    width: 130px;
-    line-height: 45px;
+    width: 150px;
+    line-height: 50px;
     margin: 10px 10px 10px 0px;
     text-align: center;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
+
 .nav-side>ul>li>a:hover {
-background-color: rgb(75, 129, 138);
+    background-color: rgb(75, 129, 138);
 }
+
+
 
 main {
     display: flex;
@@ -210,9 +217,10 @@ main {
 }
 
 .web-design {
-    margin: 0px 0px 50px 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.web-design>h2{
+.web-design>h2 {
     margin-left: 20px;
 }
