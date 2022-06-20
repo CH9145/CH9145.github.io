@@ -85,7 +85,7 @@ header>.container>nav>ul>li>a {
 // ====================================
 
 
-// 圖片相關
+// 圖片相關START
 .img-fluid {
     width: 100%;
 }
@@ -94,69 +94,52 @@ header>.container>nav>ul>li>a {
     border-radius: 8px;
 }
 
-// 圖片相關
+// 圖片相關END
 
+
+
+// 
+// 
+// 
 // 區塊相關
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-// 區塊相關
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 40px);
+        margin: 10px 20px 10px 20px;
+    }
+}// column-預設手機排版 END
 
 
+@media(min-width:768px){
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            --num: calc(12 / #{$i});
+             width: calc(100% / var(--num) - 40px);
+            margin: 10px 20px 10px 20px;
+        }
+    }
+ } //大於768 END 
 
-// 
-// .col-md 中尺寸格柵
-@media(min-width: 768px){
-    .col-md-footer {
-        text-align: center;
-        width: calc(100% / 4 - 40px);
-        margin: 10px 20px 10px 20px;
-    }
-    
-    .col-md-2 {
-        width: calc(100% / 6 - 40px);
-        margin: 10px 20px 10px 20px;
-    }
-    
-    .col-md-3 {
-        width: calc(100% / 4 - 40px);
-        margin: 10px 20px 10px 20px;
-        // 上右下左
-    }
-    
-    .col-md-4 {
-        width: calc(100% / 3 - 40px);
-        margin: 10px 20px 10px 20px;
-        // 上右下左
-    }
-    
-    .col-md-6 {
-        width: calc(100% / 2 - 40px);
-        margin: 10px 20px 10px 20px;
-        // 上右下左
-    }
-    
-    .col-md-8 {
-        width: calc(100% / 1.5 - 40px);
-        margin: 10px 20px 10px 20px;
-    }
-    
-    .col-md-9 {
-        width: calc(100% / 1.3333 - 40px);
-        margin: 10px 20px 10px 20px;
-    }
-}
-
-// 
-// .col-lg 大尺寸格柵
 @media(min-width:1200px){
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 40px);
+            margin: 10px 20px 10px 20px;
+        }
+    }
+ } //大於1200 END 
 
-}
 
-
-// 文字相關
+//  
+// 
+// 文字相關 START
 .text-center {
     text-align: center;
 }
@@ -176,8 +159,10 @@ header>.container>nav>ul>li>a {
 h2 {
     margin: 10px;
     font-size: 30px;
-}
+} //文字相關 END 
 
+
+// 
 // 內容
 a.title {
     color: $primary-color;
@@ -228,6 +213,7 @@ footer>div>p {
     color: gray;
     letter-spacing: 4px;
     width: 100%;
+    padding-left: 20px;
 }
 
 .breadcrumb>p>span {
@@ -253,9 +239,6 @@ footer>div>p {
 // 
 // 內容頁
 
-aside.col-md-3 {
-    margin-left: 0px;
-}
 
 main {
     display: flex;
@@ -331,11 +314,11 @@ main {
         text-align: center;
     }
 
-    header{
+    header {
         background-color: $primary-color;
         padding-bottom: 30px;
     }
-   
+
     header>.container>h1>a {
         color: white;
     }
@@ -360,7 +343,7 @@ main {
         border-top: 1px solid whitesmoke;
     }
 
-    header>.container>nav>ul>li>a{        
+    header>.container>nav>ul>li>a {
         color: whitesmoke;
         display: block;
         line-height: 30px;
@@ -385,3 +368,18 @@ main {
 }
 
 //min-width 768px END 
+
+// $i index **首字不能是數字
+// for迴圈
+// from through 從 1 開始到 3
+@for $i from 1 through 5 {
+    .fz-#{$i} {
+        font-size: $i*1em;
+    }
+}
+
+@for $i from 1 through 5 {
+    .mb-#{$i} {
+        margin-bottom: $i*1em;
+    }
+}
