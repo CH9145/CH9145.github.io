@@ -3,13 +3,14 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title CH web
+  title 網頁作品
   link(rel='stylesheet' href='/public/css/styles.css')
 body
-    header
+    header.overflow-hidden
       .container
+        a.icon-menu(href="") MENU
         h1
-          a(href='index.html') Chia&apos;s Portfolio
+          a(href='index.html') Chia's Portfolio
         nav
           ul
             li
@@ -21,25 +22,25 @@ body
             li
               a(href='#') 聯絡我
     .container.row
-        .breadcrumb
-            a(href='index.html') 首頁
-            span >
-            a.breadcrumb-active(href='web-design.html') &#x7DB2;&#x9801;&#x4F5C;&#x54C1;
+      .breadcrumb
+        a(href='index.html') &#x9996;&#x9801;
+        span &gt;
+        a.breadcrumb-active(href='web-design.html') &#x7DB2;&#x9801;&#x4F5C;&#x54C1;
         //
           >
           <a href="">作品內頁</a>
-        aside.col-3
-            .sidebar
-                ul
-                    li
-                      a.bt-primary(href='') 網頁1
-                    li 
-                      a.bt-primary(href='') 網頁2
-                    li 
-                      a.bt-primary(href='') 網頁3
-                    li 
-                      a.bt-primary(href='') 網頁4
-      main.col-9
+      aside.col-md-3
+        .sidebar
+          ul
+            li
+              a.bt-primary(href='') &#x7DB2;&#x9801;1
+            li
+              a.bt-primary(href='') &#x7DB2;&#x9801;2
+            li
+              a.bt-primary(href='') &#x7DB2;&#x9801;3
+            li
+              a.bt-primary(href='') &#x7DB2;&#x9801;4
+      main.col-md-9
         .web-design
           h2.text-left &#x7DB2;&#x9801;&#x4F5C;&#x54C1;&#x4E00;&#x89BD;
           .row
@@ -48,8 +49,8 @@ body
               <img src="https://www.fillmurray.com/200/200" alt="" class="img-wrap">
               <span class="icon-new">NEW</a></span>
               </a>
-            // div.col-6>a.img-wrap>div.img-overlay>img[src="https://www.fillmurray.com/400/400"].img-fluid+span.icon-new{NEW}^^p.title.text-center>a{網頁$}+p.description{說明}
-            .col-6
+            // div.col-md-6>a.img-wrap>div.img-overlay>img[src="https://www.fillmurray.com/400/400"].img-fluid+span.icon-new{NEW}^^p.title.text-center>a{網頁$}+p.description{說明}
+            .col-md-6
               a.img-wrap(href='')
                 .img-overlay
                   img.img-fluid(src='https://www.fillmurray.com/500/500' alt='')
@@ -58,7 +59,7 @@ body
                 a(href='') &#x7DB2;&#x9801;1
               p.description.text-center &#x8AAA;&#x660E;
               p
-            .col-6
+            .col-md-6
               a.img-wrap(href='')
                 .img-overlay
                   img.img-fluid(src='https://www.fillmurray.com/500/500' alt='')
@@ -67,7 +68,7 @@ body
                 a(href='') &#x7DB2;&#x9801;2
               p.description.text-center &#x8AAA;&#x660E;
               p
-            .col-6
+            .col-md-6
               a.img-wrap(href='')
                 .img-overlay
                   img.img-fluid(src='https://www.fillmurray.com/500/500' alt='')
@@ -76,7 +77,7 @@ body
                 a(href='') &#x7DB2;&#x9801;3
               p.description.text-center &#x8AAA;&#x660E;
               p
-            .col-6
+            .col-md-6
               a.img-wrap(href='')
                 .img-overlay
                   img.img-fluid(src='https://www.fillmurray.com/500/500' alt='')
@@ -86,51 +87,50 @@ body
               p.description.text-center &#x8AAA;&#x660E;
               p
     // footer>.container>dl*5>dt{標題$$}+dd*4>a{項目$$}^^p.copyright.text-center{copyright 2022}
-    // footer>.container>.row>dl.col-footer*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright 2022}
+    // footer>.container>.row>dl.col-md-footer*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright 2022}
     footer
       .container
         .row
-          dl.col-footer
-            dt &#x6A19;&#x984C;01
+          dl.col-md-footer
+            dt 標題01
             dd
-              a(href='') &#x9805;&#x76EE;01
+              a(href='') 項目01
             dd
-              a(href='') &#x9805;&#x76EE;02
+              a(href='') 項目02
             dd
-              a(href='') &#x9805;&#x76EE;03
+              a(href='') 項目03
             dd
-              a(href='') &#x9805;&#x76EE;04
-          dl.col-footer
-            dt &#x6A19;&#x984C;02
+              a(href='') 項目04
+          dl.col-md-footer
+            dt 標題02
             dd
-              a(href='') &#x9805;&#x76EE;01
+              a(href='') 項目01
             dd
-              a(href='') &#x9805;&#x76EE;02
+              a(href='') 項目02
             dd
-              a(href='') &#x9805;&#x76EE;03
+              a(href='') 項目03
             dd
-              a(href='') &#x9805;&#x76EE;04
-          dl.col-footer
-            dt &#x6A19;&#x984C;03
+              a(href='') 項目04
+          dl.col-md-footer
+            dt 標題03
             dd
-              a(href='') &#x9805;&#x76EE;01
+              a(href='') 項目01
             dd
-              a(href='') &#x9805;&#x76EE;02
+              a(href='') 項目02
             dd
-              a(href='') &#x9805;&#x76EE;03
+              a(href='') 項目03
             dd
-              a(href='') &#x9805;&#x76EE;04
-          dl.col-footer
-            dt &#x6A19;&#x984C;04
+              a(href='') 項目04
+          dl.col-md-footer
+            dt 標題04
             dd
-              a(href='') &#x9805;&#x76EE;01
+              a(href='') 項目01
             dd
-              a(href='') &#x9805;&#x76EE;02
+              a(href='') 項目02
             dd
-              a(href='') &#x9805;&#x76EE;03
+              a(href='') 項目03
             dd
-              a(href='') &#x9805;&#x76EE;04
-        p.copyright.text-center
-          | copyright 2022 
+              a(href='') 項目04
+        p.copyright.text-center copyright 2022 
           br
-          |  &#x6B64;&#x7DB2;&#x9801;&#x70BA;&#x4E2D;&#x8208;&#x5927;&#x5B78;&#x63A8;&#x5EE3;&#x90E8;&#x8AB2;&#x5802;&#x7DF4;&#x7FD2;&#x7DB2;&#x9801;&#xFF0C;&#x50C5;&#x70BA;&#x500B;&#x4EBA;&#x7528;
+          |  此網頁為中興大學推廣部課堂練習作品，僅為個人用
