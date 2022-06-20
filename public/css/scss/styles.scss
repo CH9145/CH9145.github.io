@@ -207,9 +207,14 @@ footer>div>p {
     margin-top: 20px;
     display: block;
     color: gray;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     width: 100%;
 }
+
+.breadcrumb>p>span {
+    padding-left: 4px;
+}
+
 
 .breadcrumb>a {
     color: gray;
