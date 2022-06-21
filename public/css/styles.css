@@ -76,6 +76,11 @@ header > .container > nav > ul > li > a {
   padding: 8px;
 }
 
+@media (min-width: 768px) {
+  header > .container nav {
+    width: 100%;
+  }
+}
 .img-fluid {
   width: 100%;
 }
@@ -464,33 +469,23 @@ main {
 
   header {
     background-color: #1d717a;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     position: relative;
   }
 
   header > .container h1 > a {
     color: white;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 60px;
   }
 
   header > .container nav {
     width: 100%;
     position: absolute;
-    top: 100px;
-    background-color: #1d717a;
-  }
-
-  nav {
-    left: -100vw;
-    opacity: 0;
-    transition: top 0.3s;
-  }
-
-  .icon-menu:hover + nav {
     left: 0;
-    opacity: 1;
+    top: 60px;
+    background-color: #1d717a;
   }
 
   header > .container nav.active {
@@ -510,7 +505,30 @@ main {
   header > .container nav > ul > li > a {
     color: whitesmoke;
     display: block;
+    line-height: 50px;
+  }
+
+  .submenu {
+    display: none;
+    background-color: #80a2a5;
+  }
+
+  header > .container nav > ul > li:hover .submenu {
+    display: block;
+  }
+
+  .submenu > li {
     line-height: 40px;
+    border-bottom: 1px solid #b9b9b9;
+  }
+
+  .submenu > li:last-child {
+    border-bottom: none;
+  }
+
+  .submenu > li > a {
+    color: black;
+    display: block;
   }
 }
 @media (min-width: 768px) {
