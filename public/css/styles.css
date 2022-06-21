@@ -49,7 +49,7 @@ header {
   box-shadow: 0px 0px 2px 0px #bcbcbc;
 }
 
-header > .container > h1 > a {
+header > .container h1 > a {
   color: #1d717a;
   font-size: 48px;
   line-height: 60px;
@@ -61,16 +61,16 @@ header > .container > h1 > a {
   max-width: 1140px;
 }
 
-header > .container > nav > ul {
+header > .container nav > ul {
   display: flex;
   justify-content: end;
 }
 
-header > .container > nav > ul > li {
+header > .container nav > ul > li {
   margin-right: 30px;
 }
 
-header > .container > nav > ul > li > a {
+header > .container nav > ul > li > a {
   color: #1d717a;
   line-height: 60px;
   padding: 8px;
@@ -79,6 +79,25 @@ header > .container > nav > ul > li > a {
 @media (min-width: 768px) {
   header > .container nav {
     width: 100%;
+  }
+
+  header > .container nav > ul > li {
+    position: relative;
+  }
+
+  .submenu {
+    position: absolute;
+    background-color: aquamarine;
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    text-align: center;
+    line-height: 30px;
+    padding: 5px;
+  }
+
+  header > .container nav > ul > li:hover {
+    display: block;
   }
 }
 .img-fluid {
@@ -449,6 +468,7 @@ main {
 }
 
 .flex-space-between {
+  display: flex;
   justify-content: space-between;
 }
 
