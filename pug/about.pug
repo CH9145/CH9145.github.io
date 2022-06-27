@@ -1,17 +1,19 @@
 doctype html
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible', content='IE=edge')
-  meta(name='viewport', content='width=device-width, initial-scale=1.0')
-  title About
-  link(rel='stylesheet', href='/public/css/styles.css')
-body 
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title About
+    link(rel='stylesheet', href='/public/css/styles.css')
+  body 
     header.overflow-hidden
         .container
-            a.icon-menu(href="") MENU
+          .row.flex-text-between
+            a#btn-nav-toggle.icon-menu(href="") MENU
             h1
-                a(href='index.html') Chia's Portfolio
-            nav
+                a(href='index.html') Chia's Portfolioaaa
+            nav#primary-navigation
                 ul
                     li
                         a(href='about.html') 關於我
@@ -33,7 +35,6 @@ body
             .col-12.col-md-6
                 img(src="https://www.fillmurray.com/300/300", alt="")
             .col-12.col-md-6.order-md-1 02
-
     footer
       .container
         .row
@@ -77,7 +78,6 @@ body
               a(href='') 項目03
             dd
               a(href='') 項目04
-        p.copyright.text-center copyright 2022 
-          br
-          |  此網頁為中興大學推廣部課堂練習作品，僅為個人用
+        p.copyright.text-center copyright 2022 此網頁為中興大學推廣部課堂練習作品，僅為個人用
+    script(src="public/js/script.js")
 

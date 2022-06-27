@@ -528,9 +528,18 @@ main {
   header > .container nav {
     width: 100%;
     position: absolute;
-    left: 0;
     top: 60px;
     background-color: #1d717a;
+  }
+
+  nav {
+    left: 0px;
+    left: -100vw;
+    transition: all 1s;
+  }
+
+  nav.active {
+    left: 0px;
   }
 
   header > .container nav.active {

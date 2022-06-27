@@ -415,27 +415,26 @@ main {
         // float: right;
         // display: none;
         position: absolute;
-        left: 0;
+        // left: 0;
         top:60px;
-        // left:0px; 避免之後動畫蓋不過，移出來單獨寫
         background-color: $primary-color;
+        // 避免之後動畫蓋不過，移出來單獨寫
         // height: 0;
         // overflow: hidden;
     }
-    // 之後打開
-    // nav{
-    //     left:0;
-    //     top: 60px;
-    //     opacity: 0;
-    //     transition: all .3s;
-    // }
-    // .icon-menu:hover + nav{
-    //     top:60px;
-    //     opacity: 1;
-    //     height: 204px;
-    // }
+    
+    nav {
+        left:0px;
+        left:-100vw;
+        transition: all 1s;
+    }
 
-
+    nav.active {
+        // top:60px;
+        // height: 204px;
+        left:0px;
+    }
+    
     header>.container nav.active {
         display: block;
     }
