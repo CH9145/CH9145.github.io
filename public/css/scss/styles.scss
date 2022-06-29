@@ -424,15 +424,15 @@ main {
     }
     
     nav {
-        left:0px;
         left:-100vw;
-        transition: all 1s;
+        transition: all .5s;
+        // display: none;
     }
 
-    nav.active {
-        // top:60px;
-        // height: 204px;
+    nav.active{
         left:0px;
+        top:60px;
+        height: 268px;
     }
     
     header>.container nav.active {
