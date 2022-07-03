@@ -6,13 +6,13 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   title CH web
   link(rel='stylesheet', href='/public/css/styles.css')
-body 
+body
     header
       .container
         .row.flex-space-between 
           h1
             a(href='index.html') Chia's Portfolio
-          a.icon-menu(href="") MENU
+          a#btn-nav-toggle.icon-menu(href="javascript:;") MENU
           nav#primary-navigation
             ul
               li
@@ -28,11 +28,6 @@ body
                     a(href="") HTML/CSS
               li
                 a(href='web-design.html') 網頁作品
-                ul.submenu 
-                  li
-                    a(href="") 品牌網頁
-                  li 
-                    a(href="") 個人網頁
               li
                 a(href='contact-us.html') 聯絡我
     // 輪播

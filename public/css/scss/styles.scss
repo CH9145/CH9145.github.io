@@ -211,6 +211,12 @@ header>.container nav>ul>li>a {
             margin: 10px 20px 10px 20px;
         }
     }
+
+    .col-new-web{
+        width: 40%;
+        margin: auto;
+    }
+
  } //大於1200 END 
 
 
@@ -251,11 +257,16 @@ a.title {
     color: rgb(10, 89, 111);
     font-size: 1.5em;
     font-weight: 800;
+    line-height: 2em;
+}
+
+.title a:hover {
+    color: rgb(12, 132, 165);
 }
 
 .description {
     color: rgb(69, 69, 69);
-    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -264,6 +275,7 @@ footer {
     color: white;
     background-color: $primary-color;
 }
+
 
 footer>div>div>dl>dt {
     font-size: 20px;
@@ -358,13 +370,15 @@ main {
 .icon-new {
     position: absolute;
     text-align: center;
-    width: 80px;
-    line-height: 80px;
+    width: 60px;
+    line-height: 50px;
     background-color: rgb(172, 46, 14);
     color: white;
     border-radius: 100%;
-    top: -20px;
-    left: -30px;
+    border: 3px double rgb(229, 118, 118);
+    top: -15px;
+    left: -15px;
+    transform: rotate(-20deg);
 }
 
 
@@ -432,7 +446,8 @@ main {
     nav.active{
         left:0px;
         top:60px;
-        height: 268px;
+        // height: 268px;
+        z-index: 100;
     }
     
     header>.container nav.active {
@@ -440,6 +455,7 @@ main {
     }
 
     header>.container nav>ul {
+        background-color: rgb(26, 124, 133);
         display: block;
     }
 
@@ -453,12 +469,12 @@ main {
     header>.container nav>ul>li>a {
         color: whitesmoke;
         display: block;
-        line-height: 50px;
+        line-height: 30px;
     }
 
     .submenu{
         display: none;
-        background-color: rgb(128, 162, 165);
+        background-color: rgb(164, 193, 196);
     }
     
     header>.container nav>ul>li:hover .submenu{
@@ -482,6 +498,9 @@ main {
     //     overflow: hidden;
     // }
 
+    main h2.sm-text-center{
+        text-align: center;
+    }
 } //max-width 767px END 
 
 

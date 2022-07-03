@@ -8,21 +8,27 @@
     <link rel="stylesheet" href="/public/css/styles.css">
   </head>
   <body> 
-    <header class="overflow-hidden">
+    <header>
       <div class="container">
-        <div class="row flex-text-between"><a class="icon-menu" id="btn-nav-toggle" href="">MENU</a>
-          <h1><a href="index.html">Chia's Portfolioaaa</a></h1>
+        <div class="row flex-space-between"> 
+          <h1><a href="index.html">Chia's Portfolio</a></h1><a class="icon-menu" id="btn-nav-toggle" href="javascript:;">MENU</a>
           <nav id="primary-navigation">
             <ul>
               <li><a href="about.html">關於我</a></li>
-              <li><a href="#">學習筆記</a></li>
+              <li><a href="#">學習筆記</a>
+                <ul class="submenu"> 
+                  <li><a href="">線框圖</a></li>
+                  <li> <a href="">Prototype</a></li>
+                  <li> <a href="">HTML/CSS</a></li>
+                </ul>
+              </li>
               <li><a href="web-design.html">網頁作品</a></li>
               <li><a href="contact-us.html">聯絡我</a></li>
             </ul>
           </nav>
         </div>
       </div>
-    </header>
+    </header><img class="img-fluid" src="public/images/about-04.jpg" alt="個人照">
     <div class="container">
       <div class="row"> 
         <div class="col-12"> 
@@ -30,47 +36,17 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6"><img src="https://www.fillmurray.com/300/300" alt=""></div>
+        <div class="col-12 col-md-6 col-lg-6"><img src="https://www.fillmurray.com/300/300" alt=""></div>
         <div class="col-12 col-md-6">02</div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6"><img src="https://www.fillmurray.com/300/300" alt=""></div>
+        <div class="col-12 col-md-6 col-lg-6"><img src="https://www.fillmurray.com/300/300" alt=""></div>
         <div class="col-12 col-md-6 order-md-1">02</div>
       </div>
     </div>
     <footer>
       <div class="container">
-        <div class="row">
-          <dl class="text-center col-6 col-md-3">
-            <dt>標題01</dt>
-            <dd><a href="">項目01</a></dd>
-            <dd><a href="">項目02</a></dd>
-            <dd><a href="">項目03</a></dd>
-            <dd><a href="">項目04</a></dd>
-          </dl>
-          <dl class="text-center col-6 col-md-3">
-            <dt>標題02</dt>
-            <dd><a href="">項目01</a></dd>
-            <dd><a href="">項目02</a></dd>
-            <dd><a href="">項目03</a></dd>
-            <dd><a href="">項目04</a></dd>
-          </dl>
-          <dl class="text-center col-6 col-md-3">
-            <dt>標題03</dt>
-            <dd><a href="">項目01</a></dd>
-            <dd><a href="">項目02</a></dd>
-            <dd><a href="">項目03</a></dd>
-            <dd><a href="">項目04</a></dd>
-          </dl>
-          <dl class="text-center col-6 col-md-3">
-            <dt>標題04</dt>
-            <dd><a href="">項目01</a></dd>
-            <dd><a href="">項目02</a></dd>
-            <dd><a href="">項目03</a></dd>
-            <dd><a href="">項目04</a></dd>
-          </dl>
-        </div>
-        <p class="copyright text-center">copyright 2022 此網頁為中興大學推廣部課堂練習作品，僅為個人用</p>
+        <p class="copyright text-center">copyright 2022 <br> 此網頁為中興大學推廣部課堂練習作品，僅為個人用</p>
       </div>
     </footer>
     <script src="public/js/script.js"></script>

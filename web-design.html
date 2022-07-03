@@ -7,17 +7,25 @@
   <link rel="stylesheet" href="/public/css/styles.css">
 </head>
 <body>
-  <header class="overflow-hidden">
-    <div class="container"><a class="icon-menu" href="">MENU</a>
-      <h1><a href="index.html">Chia's Portfolio</a></h1>
-      <nav>
-        <ul>
-          <li><a href="about.html">關於我</a></li>
-          <li><a href="#">學習筆記</a></li>
-          <li><a href="web-design.html">網頁作品</a></li>
-          <li><a href="contact-us.html">聯絡我</a></li>
-        </ul>
-      </nav>
+  <header>
+    <div class="container">
+      <div class="row flex-space-between"> 
+        <h1><a href="index.html">Chia's Portfolio</a></h1><a class="icon-menu" id="btn-nav-toggle" href="javascript:;">MENU</a>
+        <nav id="primary-navigation">
+          <ul>
+            <li><a href="about.html">關於我</a></li>
+            <li><a href="#">學習筆記</a>
+              <ul class="submenu"> 
+                <li><a href="">線框圖</a></li>
+                <li> <a href="">Prototype</a></li>
+                <li> <a href="">HTML/CSS</a></li>
+              </ul>
+            </li>
+            <li><a href="web-design.html">網頁作品</a></li>
+            <li><a href="contact-us.html">聯絡我</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <div class="container row">
@@ -30,16 +38,14 @@
     <aside class="col-12 col-md-3 col-lg-2">
       <div class="sidebar">
         <ul>
-          <li><a class="bt-primary" href="">網頁1</a></li>
-          <li><a class="bt-primary" href="">網頁2</a></li>
-          <li><a class="bt-primary" href="">網頁3</a></li>
-          <li><a class="bt-primary" href="">網頁4</a></li>
+          <li><a class="bt-primary" href="">品牌網頁</a></li>
+          <li><a class="bt-primary" href="">單頁式網頁</a></li>
         </ul>
       </div>
     </aside>
     <main class="col-12 col-md-9 col-lg-10">
       <div class="web-design">
-        <h2 class="text-left">網頁作品一覽</h2>
+        <h2 class="text-left sm-text-center">網頁作品一覽</h2>
         <div class="row">
           <!--
           <a href="" class="img-wrap">
@@ -48,29 +54,17 @@
           </a>
           -->
           <!-- div.col-md-6>a.img-wrap>div.img-overlay>img[src="https://www.fillmurray.com/400/400"].img-fluid+span.icon-new{NEW}^^p.title.text-center>a{網頁$}+p.description{說明}-->
-          <div class="col-12 col-md-6 col-lg-3"><a class="img-wrap" href="">
-              <div class="img-overlay"><img class="img-fluid" src="https://www.fillmurray.com/500/500" alt=""><span class="icon-new">NEW</span></div></a>
-            <p class="title text-center"><a href="">網頁1</a></p>
-            <p class="description text-center">說明</p>
-            <p></p>
+          <div class="col-12 col-md-6 col-lg-3"><a class="img-wrap" href="https://ch9145.github.io/scoopi/" target="blank">
+              <div class="img-overlay"><img class="img-fluid" src="public/images/scoopi-sign.jpg" alt=""><span class="icon-new">NEW</span></div></a>
+            <p class="title text-center"><a href="https://ch9145.github.io/scoopi/" target="blank">Scoopi</a></p>
+            <p class="description text-center">虛構品牌網頁</p>
+            <p class="description text-center"> 2022.07.04 (持續進行中)</p>
           </div>
-          <div class="col-12 col-md-6 col-lg-3"><a class="img-wrap" href="">
-              <div class="img-overlay"><img class="img-fluid" src="https://www.fillmurray.com/500/500" alt=""><span class="icon-new">NEW</span></div></a>
-            <p class="title text-center"><a href="">網頁2</a></p>
-            <p class="description text-center">說明</p>
-            <p></p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3"><a class="img-wrap" href="">
-              <div class="img-overlay"><img class="img-fluid" src="https://www.fillmurray.com/500/500" alt=""><span class="icon-new">NEW</span></div></a>
-            <p class="title text-center"><a href="">網頁3</a></p>
-            <p class="description text-center">說明</p>
-            <p></p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3"><a class="img-wrap" href="">
-              <div class="img-overlay"><img class="img-fluid" src="https://www.fillmurray.com/500/500" alt=""><span class="icon-new">NEW</span></div></a>
-            <p class="title text-center"><a href="">網頁4</a></p>
-            <p class="description text-center">說明</p>
-            <p></p>
+          <div class="col-12 col-md-6 col-lg-3"><a class="img-wrap" href="https://ch9145.github.io/gaudi_practice/" target="blank">
+              <div class="img-overlay"><img class="img-fluid" src="public/images/gaudi-01.jpg" alt=""></div></a>
+            <p class="title text-center"><a href="https://ch9145.github.io/gaudi_practice/" target="blank">Gaudi介紹</a></p>
+            <p class="description text-center">首次練習一頁式網頁</p>
+            <p class="description text-center">2022.06.10</p>
           </div>
         </div>
       </div>
@@ -80,37 +74,8 @@
   <!-- footer>.container>.row>dl.col-md-footer*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright 2022}-->
   <footer>
     <div class="container">
-      <div class="row">
-        <dl class="text-center col-6 col-md-3">
-          <dt>標題01</dt>
-          <dd><a href="">項目01</a></dd>
-          <dd><a href="">項目02</a></dd>
-          <dd><a href="">項目03</a></dd>
-          <dd><a href="">項目04</a></dd>
-        </dl>
-        <dl class="text-center col-6 col-md-3">
-          <dt>標題02</dt>
-          <dd><a href="">項目01</a></dd>
-          <dd><a href="">項目02</a></dd>
-          <dd><a href="">項目03</a></dd>
-          <dd><a href="">項目04</a></dd>
-        </dl>
-        <dl class="text-center col-6 col-md-3">
-          <dt>標題03</dt>
-          <dd><a href="">項目01</a></dd>
-          <dd><a href="">項目02</a></dd>
-          <dd><a href="">項目03</a></dd>
-          <dd><a href="">項目04</a></dd>
-        </dl>
-        <dl class="text-center col-6 col-md-3">
-          <dt>標題04</dt>
-          <dd><a href="">項目01</a></dd>
-          <dd><a href="">項目02</a></dd>
-          <dd><a href="">項目03</a></dd>
-          <dd><a href="">項目04</a></dd>
-        </dl>
-      </div>
       <p class="copyright text-center">copyright 2022 <br> 此網頁為中興大學推廣部課堂練習作品，僅為個人用</p>
     </div>
+    <script src="public/js/script.js"></script>
   </footer>
 </body>

@@ -7,116 +7,59 @@ html
     title CH web
     link(rel='stylesheet', href='/public/css/styles.css')
   body 
-      header
-        .container
-          .row.flex-space-between 
-            h1
-              a(href='index.html') Chia's Portfolio
-            a#btn-nav-toggle.icon-menu(href="javascript:;") MENU
-            nav#primary-navigation
-              ul
-                li
-                  a(href='about.html') 關於我
-                li
-                  a(href='#') 學習筆記
-                  ul.submenu 
-                    li
-                      a(href="") 線框圖
-                    li 
-                      a(href="") Prototype
-                    li 
-                      a(href="") HTML/CSS
-                li
-                  a(href='web-design.html') 網頁作品
-                  ul.submenu 
-                    li
-                      a(href="") 品牌網頁
-                    li 
-                      a(href="") 個人網頁
-                li
-                  a(href='contact-us.html') 聯絡我
-      // 輪播
-      img.img-fluid(src='https://www.fillmurray.com/1920/400\
-      ', alt='')
-      // .container>h2{最新作品}+.row>.col-md-4*6>img.img-fluid+p.title>a[href="#"]{作品$}^p.description
-      // .col-md-4*5>a>img[src="https://baconmockup.com/300/300" class="img-fluid img-rounded"]^p.title.text-center>a{作品標題$}^p.date.text-center{2022-6-15}
+    header
       .container
-        h2.fz-3.text-center &#x6700;&#x65B0;&#x4F5C;&#x54C1;
-        .row
-          .col-6.col-md-4.col-lg-3
-            a(href='')
-              img.img-fluid.img-rounded(src='https://www.fillmurray.com/300/300', alt='')
-            p.title.text-center
-              a(href='') 作品1
-            p.description.text-center 說明
-          .col-6.col-md-4.col-lg-3
-            a(href='')
-              img.img-fluid.img-rounded(src='https://www.fillmurray.com/300/300', alt='')
-            p.title.text-center
-              a(href='') 作品2
-            p.description.text-center 說明
-          .col-6.col-md-4.col-lg-3
-            a(href='')
-              img.img-fluid.img-rounded(src='https://www.fillmurray.com/300/300', alt='')
-            p.title.text-center
-              a(href='') 作品3
-            p.description.text-center 說明
-          .col-6.col-md-4.col-lg-3
-            a(href='')
-              img.img-fluid.img-rounded(src='https://www.fillmurray.com/300/300', alt='')
-            p.title.text-center
-              a(href='') 作品4
-            p.description.text-center 說明
-          .col-6.col-md-4.col-lg-3
-            a(href='')
-              img.img-fluid.img-rounded(src='https://www.fillmurray.com/300/300', alt='')
-            p.title.text-center
-              a(href='') 作品5
-            p.description.text-center 說明
+        .row.flex-space-between 
+          h1
+            a(href='index.html') Chia's Portfolio
+          a#btn-nav-toggle.icon-menu(href="javascript:;") MENU
+          nav#primary-navigation
+            ul
+              li
+                a(href='about.html') 關於我
+              li
+                a(href='#') 學習筆記
+                ul.submenu 
+                  li
+                    a(href="") 線框圖
+                  li 
+                    a(href="") Prototype
+                  li 
+                    a(href="") HTML/CSS
+              li
+                a(href='web-design.html') 網頁作品
+              li
+                a(href='contact-us.html') 聯絡我
+    // 輪播
+    img.img-fluid(src='public/images/index.jpg', alt='個人照')
+    // .container>h2{最新作品}+.row>.col-md-4*6>img.img-fluid+p.title>a[href="#"]{作品$}^p.description
+    // .col-md-4*5>a>img[src="https://baconmockup.com/300/300" class="img-fluid img-rounded"]^p.title.text-center>a{作品標題$}^p.date.text-center{2022-6-15}
+    .container
+      h2.text-center 最新作品
+      .row
+        .col-12.col-md-6.col-new-web
+          a.img-wrap(href='https://ch9145.github.io/scoopi/' target="blank")
+            .img-overlay
+              img.img-fluid(src='public/images/scoopi-sign.jpg' alt='')
+              span.icon-new NEW
+          p.title.text-center
+            a(href='https://ch9145.github.io/scoopi/' target="blank") Scoopi
+          p.description.text-center 虛構品牌網頁
+          p.description.text-center  2022.07.04 (持續進行中)
+        .col-12.col-md-6.col-new-web
+          a.img-wrap(href='https://ch9145.github.io/gaudi_practice/' target="blank")
+            .img-overlay
+              img.img-fluid(src='public/images/gaudi-01.jpg' alt='')
+              //- span.icon-new NEW
+          p.title.text-center
+            a(href='https://ch9145.github.io/gaudi_practice/' target="blank") Gaudi介紹
+          p.description.text-center 首次練習一頁式網頁
+          p.description.text-center 2022.06.10
       // footer>.container>dl*5>dt{標題$$}+dd*4>a{項目$$}^^p.copyright.text-center{copyright 2022}
       // footer>.container>.row>dl.col-md-footer*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright 2022}
-      footer
-        .container
-          .row
-            dl.text-center.col-6.col-md-3
-              dt 標題01
-              dd
-                a(href='') 項目01
-              dd
-                a(href='') 項目02
-              dd
-                a(href='') 項目03
-              dd
-                a(href='') 項目04
-            dl.text-center.col-6.col-md-3
-              dt 標題02
-              dd
-                a(href='') 項目01
-              dd
-                a(href='') 項目02
-              dd
-                a(href='') 項目03
-              dd
-                a(href='') 項目04
-            dl.text-center.col-6.col-md-3
-              dt 標題03
-              dd
-                a(href='') 項目01
-              dd
-                a(href='') 項目02
-              dd
-                a(href='') 項目03
-              dd
-                a(href='') 項目04
-            dl.text-center.col-6.col-md-3
-              dt 標題04
-              dd
-                a(href='') 項目01
-              dd
-                a(href='') 項目02
-              dd
-                a(href='') 項目03
-              dd
-                a(href='') 項目04
-        p.copyright.text-center copyright 2022 此網頁為中興大學推廣部課堂練習作品，僅為個人用
+    footer
+      .container
+        p.copyright.text-center copyright 2022 
+          br
+          |  此網頁為中興大學推廣部課堂練習作品，僅為個人用
       script(src="public/js/script.js")
